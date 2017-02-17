@@ -1,0 +1,19 @@
+PODS:
+  - FFUIFactory (1.0.0)
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - FFUIFactory (from `../`)
+  - Masonry
+
+EXTERNAL SOURCES:
+  FFUIFactory:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FFUIFactory: 5320e37f1b4fb2267ee96e9f985764afe2ec2d8a
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: 13d4e1f18d4b4214aa3720c4363cacd97718de29
+
+COCOAPODS: 1.1.1

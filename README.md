@@ -1,27 +1,13 @@
-# [FFUIFactory](html/index.html)
+# [FFUIFactory](https://github.com/liubin303/FFUIFactory/html/index.html)
 
 ## 简介
 FFUIFactory是一个快速、灵活的构建UI的组件库，能有效的提升业务开发效率，降低代码冗余。组件都是基于「Category」的形式对常用的UI控件和依赖类分类，添加工厂方法和一些常用属性的快捷设置通道，抽取公有代码，形成不同的UI工厂，每个工厂细分职责，代码高度重用，把基础控件的一些常用功能配合UI一起提供给业务工程师。
 
-
-## 联系Owner
-
-QQ：273631976
-
-> **从大量的使用场景来看，UIView、UILabel、UIButton、UIImageView、UITextField的使用是最频繁的，也是跟业务工程师打交道最多的，目前仅对这些控件做扩展，希望大家多提建议或者意见。*
-
 ## 使用说明
 
-将 [项目结构](https://github.com/liubin303/FFUIFactory#项目结构) 中提到的 FFUIFactory 这个「文件夹」拖拽到项目中。
+* 将 [项目结构](https://github.com/liubin303/FFUIFactory#项目结构) 中提到的 FFUIFactory 这个「文件夹」拖拽到项目中。
 
-请参考Example工程
-├── FFUIFactory
-│   ├── FFUIFactoryViewController
-│   ├── UIViewSampleViewController
-│   ├── UILableSampleViewController
-│   ├── UIButtonSampleViewController
-│   ├── UIImageViewSampleViewViewController
-│   ├── UITextFieldSampleViewController
+*  `pod 'FFUIfactory', '~>1.0.0'`
 
 > *注意：为控件设置任意约束之后，用工厂方法初始化时设置的frame都会被覆盖失效，包括ff_sizeToFit方法也会失效。
 >如果你习惯使用设置frame控制控件的样式，使用工厂方法创建控件时传入的width、size、frame参数需要传入有意义的值。
@@ -132,7 +118,6 @@ QQ：273631976
 
 * 支持计算文本所占用的size
 * 支持过滤字符
-
 
 
 
