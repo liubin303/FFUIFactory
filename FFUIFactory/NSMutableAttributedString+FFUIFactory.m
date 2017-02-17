@@ -122,7 +122,7 @@
 }
 
 
-+ (instancetype)ff_attributedStringWithText:(NSString *)string
++ (instancetype)ff_attributedStringWithString:(NSString *)string
                                        font:(UIFont *)font
                                       color:(UIColor *)color
                                 lineSpacing:(CGFloat)lineSpacing

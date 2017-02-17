@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/liubin303/FFUIFactory.git', :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
   s.source_files     = 'FFUIFactory/*.{h,m}'
-  s.resource         = ''
   s.requires_arc     = true
 
 end
