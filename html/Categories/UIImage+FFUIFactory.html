@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UIImage(FFUIFactory) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">UIFactory </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">WanDa</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/ff_circleLineWithDiameter:border:color:">+ ff_circleLineWithDiameter:border:color:</option>
+		
+		<option value="//api/name/ff_circleLineWithDiameter:border:color:backgroudColor:">+ ff_circleLineWithDiameter:border:color:backgroudColor:</option>
+		
+		<option value="//api/name/ff_circleWithDiameter:color:">+ ff_circleWithDiameter:color:</option>
+		
+		<option value="//api/name/ff_imageWithColor:">+ ff_imageWithColor:</option>
+		
+		<option value="//api/name/ff_imageWithColor:border:color:cornerRadius:">+ ff_imageWithColor:border:color:cornerRadius:</option>
+		
+		<option value="//api/name/ff_imageWithColor:cornerRadius:">+ ff_imageWithColor:cornerRadius:</option>
+		
+		<option value="//api/name/ff_imageWithColor:size:">+ ff_imageWithColor:size:</option>
+		
+		<option value="//api/name/ff_imageWithContentFileName:">+ ff_imageWithContentFileName:</option>
+		
+		<option value="//api/name/ff_imageWithContentFileName:ofType:">+ ff_imageWithContentFileName:ofType:</option>
+		
+		<option value="//api/name/ff_imageWithSize:gradientColor:to:border:color:blending:color:cornerRadius:">+ ff_imageWithSize:gradientColor:to:border:color:blending:color:cornerRadius:</option>
+		
+		<option value="//api/name/ff_imageWithSize:gradientColor:to:border:color:cornerRadius:">+ ff_imageWithSize:gradientColor:to:border:color:cornerRadius:</option>
+		
+		<option value="//api/name/ff_imageWithSize:gradientColor:to:cornerRadius:">+ ff_imageWithSize:gradientColor:to:cornerRadius:</option>
+		
+		<option value="//api/name/ff_imageWithSize:gradientColors:gradientLocations:border:color:blending:color:cornerRadius:">+ ff_imageWithSize:gradientColors:gradientLocations:border:color:blending:color:cornerRadius:</option>
+		
+		<option value="//api/name/ff_lineWithColor:orientation:">+ ff_lineWithColor:orientation:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/ff_centerStretchImage">- ff_centerStretchImage</option>
+		
+		<option value="//api/name/ff_fillImageWithColor:">- ff_fillImageWithColor:</option>
+		
+		<option value="//api/name/ff_gaussiafflurImage">- ff_gaussiafflurImage</option>
+		
+		<option value="//api/name/ff_gaussiafflurImageComplete:">- ff_gaussiafflurImageComplete:</option>
+		
+		<option value="//api/name/ff_gaussiafflurImageWithRadius:iterations:">- ff_gaussiafflurImageWithRadius:iterations:</option>
+		
+		<option value="//api/name/ff_gaussiafflurImageWithRadius:iterations:complete:">- ff_gaussiafflurImageWithRadius:iterations:complete:</option>
+		
+		<option value="//api/name/ff_mirroredImage">- ff_mirroredImage</option>
+		
+		<option value="//api/name/ff_rotateWithimageOrientation:">- ff_rotateWithimageOrientation:</option>
+		
+		<option value="//api/name/ff_rotatedByDegrees:">- ff_rotatedByDegrees:</option>
+		
+		<option value="//api/name/ff_scaleToSize:">- ff_scaleToSize:</option>
+		
+		<option value="//api/name/ff_scaleToSizeIgnoreScreenScale:">- ff_scaleToSizeIgnoreScreenScale:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UIImage(FFUIFactory) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>UIImage+FFUIFactory.h<br />UIImage+FFUIFactory.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ff_imageWithContentFileName:" title="ff_imageWithContentFileName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithContentFileName:">+&nbsp;ff_imageWithContentFileName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从[NSBundle mainBundle]获取指定名称的png图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithContentFileName:(NSString *)<em>fileName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>图片名称</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithContentFileName:ofType:" title="ff_imageWithContentFileName:ofType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithContentFileName:ofType:">+&nbsp;ff_imageWithContentFileName:ofType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从[NSBundle mainBundle]获取指定名称指定类型的图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithContentFileName:(NSString *)<em>fileName</em> ofType:(NSString *)<em>ext</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>图片名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ext</code></th>
+						<td><p>扩展名</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithColor:" title="ff_imageWithColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithColor:">+&nbsp;ff_imageWithColor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一个指定颜色，size(1,1)的图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>一个颜色指标【不能为nil】</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithColor:size:" title="ff_imageWithColor:size:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithColor:size:">+&nbsp;ff_imageWithColor:size:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一个指定颜色和size的图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithColor:(UIColor *)<em>color</em> size:(CGSize)<em>size</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>一个颜色指标【不能为nil】</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>尺寸</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithColor:cornerRadius:" title="ff_imageWithColor:cornerRadius:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithColor:cornerRadius:">+&nbsp;ff_imageWithColor:cornerRadius:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一个size(radius+3,radius+3)的color颜色图片，</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithColor:(UIColor *)<em>color</em> cornerRadius:(CGFloat)<em>radius</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>填充色颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>圆角半径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithColor:border:color:cornerRadius:" title="ff_imageWithColor:border:color:cornerRadius:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithColor:border:color:cornerRadius:">+&nbsp;ff_imageWithColor:border:color:cornerRadius:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一个size(radius+width+3,radius+width+3)的color颜色带with宽边线和borderColor颜色的图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithColor:(UIColor *)<em>color</em> border:(CGFloat)<em>width</em> color:(UIColor *)<em>borderColor</em> cornerRadius:(CGFloat)<em>radius</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>填充色颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>边线宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>borderColor</code></th>
+						<td><p>边线颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>圆角半径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithSize:gradientColor:to:cornerRadius:" title="ff_imageWithSize:gradientColor:to:cornerRadius:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithSize:gradientColor:to:cornerRadius:">+&nbsp;ff_imageWithSize:gradientColor:to:cornerRadius:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一个size为给定size的渐变颜色从from到to的图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithSize:(CGSize)<em>size</em> gradientColor:(UIColor *)<em>from</em> to:(UIColor *)<em>to</em> cornerRadius:(CGFloat)<em>radius</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>size大小</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>from</code></th>
+						<td><p>起始颜色，位置在top</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>to</code></th>
+						<td><p>终止颜色，位置在bottom</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>圆角半径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithSize:gradientColor:to:border:color:cornerRadius:" title="ff_imageWithSize:gradientColor:to:border:color:cornerRadius:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithSize:gradientColor:to:border:color:cornerRadius:">+&nbsp;ff_imageWithSize:gradientColor:to:border:color:cornerRadius:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一个size为给定size的渐变颜色从from到to的带with宽边线和borderColor颜色的图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithSize:(CGSize)<em>size</em> gradientColor:(UIColor *)<em>from</em> to:(UIColor *)<em>to</em> border:(CGFloat)<em>width</em> color:(UIColor *)<em>borderColor</em> cornerRadius:(CGFloat)<em>radius</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>size大小</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>from</code></th>
+						<td><p>起始颜色，位置在top</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>to</code></th>
+						<td><p>终止颜色，位置在bottom</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>边线宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>borderColor</code></th>
+						<td><p>边线颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>圆角半径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithSize:gradientColor:to:border:color:blending:color:cornerRadius:" title="ff_imageWithSize:gradientColor:to:border:color:blending:color:cornerRadius:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithSize:gradientColor:to:border:color:blending:color:cornerRadius:">+&nbsp;ff_imageWithSize:gradientColor:to:border:color:blending:color:cornerRadius:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一个size为给定size的渐变颜色从from到to的带with宽边线和borderColor颜色的图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithSize:(CGSize)<em>size</em> gradientColor:(UIColor *)<em>from</em> to:(UIColor *)<em>to</em> border:(CGFloat)<em>width</em> color:(UIColor *)<em>borderColor</em> blending:(CGFloat)<em>blendingWidth</em> color:(UIColor *)<em>blendingColor</em> cornerRadius:(CGFloat)<em>radius</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>size大小</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>from</code></th>
+						<td><p>起始颜色，位置在top</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>to</code></th>
+						<td><p>终止颜色，位置在bottom</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>边线宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>borderColor</code></th>
+						<td><p>边线颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>blendingWidth</code></th>
+						<td><p>边缘配色宽度，使得绘制出的图片渐变更自然</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>blendingColor</code></th>
+						<td><p>边缘配色，使得绘制出的图片渐变更自然</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>圆角半径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_imageWithSize:gradientColors:gradientLocations:border:color:blending:color:cornerRadius:" title="ff_imageWithSize:gradientColors:gradientLocations:border:color:blending:color:cornerRadius:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_imageWithSize:gradientColors:gradientLocations:border:color:blending:color:cornerRadius:">+&nbsp;ff_imageWithSize:gradientColors:gradientLocations:border:color:blending:color:cornerRadius:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一个size为给定size的渐变颜色带with宽边线和borderColor颜色的图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_imageWithSize:(CGSize)<em>size</em> gradientColors:(NSArray *)<em>colors</em> gradientLocations:(const CGFloat [ ])<em>locations</em> border:(CGFloat)<em>width</em> color:(UIColor *)<em>borderColor</em> blending:(CGFloat)<em>blendingWidth</em> color:(UIColor *)<em>blendingColor</em> cornerRadius:(CGFloat)<em>radius</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>size大小</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>colors</code></th>
+						<td><p>渐变颜色序列，元素为UIColor</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locations</code></th>
+						<td><p>渐变位置数组元素为CGFloat，取值[0~1]</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>边框宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>borderColor</code></th>
+						<td><p>变宽颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>blendingWidth</code></th>
+						<td><p>配色宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>blendingColor</code></th>
+						<td><p>配色颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>圆角半径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_lineWithColor:orientation:" title="ff_lineWithColor:orientation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_lineWithColor:orientation:">+&nbsp;ff_lineWithColor:orientation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回一像素线图片，实际是1x2或者1x3的图片，根据屏幕scale决定</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_lineWithColor:(UIColor *)<em>color</em> orientation:(UIInterfaceOrientation)<em>orientation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>线的颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>orientation</code></th>
+						<td><p>透明像素填充方向</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>一像素线图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_circleLineWithDiameter:border:color:" title="ff_circleLineWithDiameter:border:color:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_circleLineWithDiameter:border:color:">+&nbsp;ff_circleLineWithDiameter:border:color:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绘制一个圆形线圈,线圈转角不是很好看</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_circleLineWithDiameter:(CGFloat)<em>diameter</em> border:(CGFloat)<em>width</em> color:(UIColor *)<em>borderColor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>diameter</code></th>
+						<td><p>直径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>线宽</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>borderColor</code></th>
+						<td><p>线颜色</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>绘制一个圆形线圈</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_circleLineWithDiameter:border:color:backgroudColor:" title="ff_circleLineWithDiameter:border:color:backgroudColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_circleLineWithDiameter:border:color:backgroudColor:">+&nbsp;ff_circleLineWithDiameter:border:color:backgroudColor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绘制一个圆形线圈</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_circleLineWithDiameter:(CGFloat)<em>diameter</em> border:(CGFloat)<em>width</em> color:(UIColor *)<em>borderColor</em> backgroudColor:(UIColor *)<em>backgroudColor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>diameter</code></th>
+						<td><p>直径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>线宽</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>borderColor</code></th>
+						<td><p>线颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>backgroudColor</code></th>
+						<td><p>背景色</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>绘制一个圆形线圈</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_circleWithDiameter:color:" title="ff_circleWithDiameter:color:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_circleWithDiameter:color:">+&nbsp;ff_circleWithDiameter:color:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绘制一个圆</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)ff_circleWithDiameter:(CGFloat)<em>diameter</em> color:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>diameter</code></th>
+						<td><p>直径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>绘制一个圆</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_centerStretchImage" title="ff_centerStretchImage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_centerStretchImage">&ndash;&nbsp;ff_centerStretchImage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>中间拉伸图</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_centerStretchImage</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>中间拉伸图</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_gaussiafflurImage" title="ff_gaussiafflurImage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_gaussiafflurImage">&ndash;&nbsp;ff_gaussiafflurImage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绘制毛玻璃</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_gaussiafflurImage</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>绘制毛玻璃</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_gaussiafflurImageComplete:" title="ff_gaussiafflurImageComplete:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_gaussiafflurImageComplete:">&ndash;&nbsp;ff_gaussiafflurImageComplete:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绘制毛玻璃</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ff_gaussiafflurImageComplete:(void ( ^ ) ( UIImage *image ))<em>complete</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>complete</code></th>
+						<td><p>绘制完</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_gaussiafflurImageWithRadius:iterations:" title="ff_gaussiafflurImageWithRadius:iterations:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_gaussiafflurImageWithRadius:iterations:">&ndash;&nbsp;ff_gaussiafflurImageWithRadius:iterations:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绘制毛玻璃</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_gaussiafflurImageWithRadius:(NSUInteger)<em>radius</em> iterations:(NSUInteger)<em>iterations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>渲染半径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>iterations</code></th>
+						<td><p>重复渲染次数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>渲染后图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_gaussiafflurImageWithRadius:iterations:complete:" title="ff_gaussiafflurImageWithRadius:iterations:complete:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_gaussiafflurImageWithRadius:iterations:complete:">&ndash;&nbsp;ff_gaussiafflurImageWithRadius:iterations:complete:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绘制毛玻璃</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ff_gaussiafflurImageWithRadius:(NSUInteger)<em>radius</em> iterations:(NSUInteger)<em>iterations</em> complete:(void ( ^ ) ( UIImage *image ))<em>complete</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>渲染半径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>iterations</code></th>
+						<td><p>重复渲染次数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>complete</code></th>
+						<td><p>渲染完成回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_mirroredImage" title="ff_mirroredImage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_mirroredImage">&ndash;&nbsp;ff_mirroredImage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绘制倒影图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_mirroredImage</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>倒影</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_rotateWithimageOrientation:" title="ff_rotateWithimageOrientation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_rotateWithimageOrientation:">&ndash;&nbsp;ff_rotateWithimageOrientation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>翻转图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_rotateWithimageOrientation:(UIImageOrientation)<em>imageOrientation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imageOrientation</code></th>
+						<td><p>翻转方向</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>翻转后图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_rotatedByDegrees:" title="ff_rotatedByDegrees:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_rotatedByDegrees:">&ndash;&nbsp;ff_rotatedByDegrees:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>按指定角度旋转图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_rotatedByDegrees:(CGFloat)<em>degrees</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>degrees</code></th>
+						<td><p>角度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>旋转后的图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_scaleToSize:" title="ff_scaleToSize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_scaleToSize:">&ndash;&nbsp;ff_scaleToSize:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>按指定尺寸缩放图片,会按屏幕分辨率再缩放</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_scaleToSize:(CGSize)<em>size</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>尺寸</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>缩放后的图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_scaleToSizeIgnoreScreenScale:" title="ff_scaleToSizeIgnoreScreenScale:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_scaleToSizeIgnoreScreenScale:">&ndash;&nbsp;ff_scaleToSizeIgnoreScreenScale:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>按指定尺寸缩放图片，忽略屏幕分辨率</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_scaleToSizeIgnoreScreenScale:(CGSize)<em>size</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>尺寸</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>缩放后的图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_fillImageWithColor:" title="ff_fillImageWithColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_fillImageWithColor:">&ndash;&nbsp;ff_fillImageWithColor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>按指定颜色填充图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIImage *)ff_fillImageWithColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>填充后的图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIImage+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 WanDa. All rights reserved. Updated: 2016-12-28</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

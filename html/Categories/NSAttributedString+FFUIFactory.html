@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NSAttributedString(FFUIFactory) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">UIFactory </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">WanDa</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/ff_attributedStringWithString:font:color:">+ ff_attributedStringWithString:font:color:</option>
+		
+		<option value="//api/name/ff_attributedStringWithString:font:color:lineSpacing:">+ ff_attributedStringWithString:font:color:lineSpacing:</option>
+		
+		<option value="//api/name/ff_attributedStringWithString:font:color:lineSpacing:strikethrough:">+ ff_attributedStringWithString:font:color:lineSpacing:strikethrough:</option>
+		
+		<option value="//api/name/ff_attributedStringWithString:font:color:lineSpacing:underline:">+ ff_attributedStringWithString:font:color:lineSpacing:underline:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/ff_sizeWithMaxWidth:">- ff_sizeWithMaxWidth:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NSAttributedString(FFUIFactory) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>NSAttributedString+FFUIFactory.h<br />NSAttributedString+FFUIFactory.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ff_sizeWithMaxWidth:" title="ff_sizeWithMaxWidth:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_sizeWithMaxWidth:">&ndash;&nbsp;ff_sizeWithMaxWidth:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>返回字体所占用得尺寸</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CGSize)ff_sizeWithMaxWidth:(CGFloat)<em>maxWidth</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxWidth</code></th>
+						<td><p>最大宽度,默认为屏幕宽度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回合适的尺寸,如果是一行会忽略行间距</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSAttributedString+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_attributedStringWithString:font:color:" title="ff_attributedStringWithString:font:color:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_attributedStringWithString:font:color:">+&nbsp;ff_attributedStringWithString:font:color:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>生成一个NSAttributedString</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)ff_attributedStringWithString:(NSString *)<em>string</em> font:(UIFont *)<em>font</em> color:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>字符内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>font</code></th>
+						<td><p>字体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSAttributedString</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSAttributedString+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_attributedStringWithString:font:color:lineSpacing:" title="ff_attributedStringWithString:font:color:lineSpacing:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_attributedStringWithString:font:color:lineSpacing:">+&nbsp;ff_attributedStringWithString:font:color:lineSpacing:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>生成一个NSAttributedString</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)ff_attributedStringWithString:(NSString *)<em>string</em> font:(UIFont *)<em>font</em> color:(UIColor *)<em>color</em> lineSpacing:(CGFloat)<em>lineSpacing</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>字符内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>font</code></th>
+						<td><p>字体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lineSpacing</code></th>
+						<td><p>行距，输入0时忽略</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSAttributedString</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSAttributedString+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_attributedStringWithString:font:color:lineSpacing:underline:" title="ff_attributedStringWithString:font:color:lineSpacing:underline:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_attributedStringWithString:font:color:lineSpacing:underline:">+&nbsp;ff_attributedStringWithString:font:color:lineSpacing:underline:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>生成一个NSAttributedString</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)ff_attributedStringWithString:(NSString *)<em>string</em> font:(UIFont *)<em>font</em> color:(UIColor *)<em>color</em> lineSpacing:(CGFloat)<em>lineSpacing</em> underline:(BOOL)<em>underline</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>字符内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>font</code></th>
+						<td><p>字体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lineSpacing</code></th>
+						<td><p>行距，输入0时忽略</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>underline</code></th>
+						<td><p>是否有下划线</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSAttributedString</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSAttributedString+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ff_attributedStringWithString:font:color:lineSpacing:strikethrough:" title="ff_attributedStringWithString:font:color:lineSpacing:strikethrough:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ff_attributedStringWithString:font:color:lineSpacing:strikethrough:">+&nbsp;ff_attributedStringWithString:font:color:lineSpacing:strikethrough:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>生成一个NSAttributedString</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)ff_attributedStringWithString:(NSString *)<em>string</em> font:(UIFont *)<em>font</em> color:(UIColor *)<em>color</em> lineSpacing:(CGFloat)<em>lineSpacing</em> strikethrough:(BOOL)<em>strikethrough</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>字符内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>font</code></th>
+						<td><p>字体</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lineSpacing</code></th>
+						<td><p>行距，输入0时忽略</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strikethrough</code></th>
+						<td><p>是否有删除线</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSAttributedString</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSAttributedString+FFUIFactory.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 WanDa. All rights reserved. Updated: 2016-12-28</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
