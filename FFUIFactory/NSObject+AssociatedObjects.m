@@ -27,7 +27,7 @@
     objc_setAssociatedObject(self, key, object, OBJC_ASSOCIATION_COPY);
 }
 
-- (void)associateWeakObject:(id)object withKey:(const void *)key {
+- (void)associateAssignObject:(id)object withKey:(const void *)key {
     objc_setAssociatedObject(self, key, object, OBJC_ASSOCIATION_ASSIGN);
 }
 

@@ -46,13 +46,13 @@
 - (void)associateCopyAtomicObject:(id)object withKey:(const void *)key;
 
 /*!
- *  @brief  关联策略：weak
+ *  @brief  关联策略：Assign
  *
  *  @param object 被关联对象
  *  @param key   key
  *
  */
-- (void)associateWeakObject:(id)object withKey:(const void *)key;
+- (void)associateAssignObject:(id)object withKey:(const void *)key;
 
 /*!
  *  @brief  获取关联对象
