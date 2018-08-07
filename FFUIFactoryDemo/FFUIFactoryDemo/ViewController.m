@@ -49,7 +49,7 @@
     self.imageViewSampleBtn.ff_y = self.buttonSampleBtn.ff_bottom+30;
     self.textFieldBtn.ff_y = self.imageViewSampleBtn.ff_bottom+30;
     
-    NSString *s = [NSString stringWithFormat:@"%.1f",2.122];
+    NSString *s = [NSString stringWithFormat:@"%.1f",2.1222];
 }
 
 - (void)buttonAction:(UIButton *)button{
