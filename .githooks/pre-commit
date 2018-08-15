@@ -7,25 +7,23 @@
 #
 # 
 
+set -eux
+
 result=0
 
-msg_color_error='\033[1;31m'
-msg_color_yellow='\033[0;33m'
-msg_color_none='\033[0m' # No Color
+msg_color_error='\033[31m'
+msg_color_success='\033[32m'
+msg_color_warning='\033[33m'
+msg_color_none='\033[0m'
 
-echo "${msg_color_yellow}Begin commit check ...${msg_color_none} \n"
-test_pattern='[a-z]'
-if git diff-index -p -M --cached HEAD -- '*.m' | grep '^+' | egrep "$test_pattern" >/dev/null 2>&1
-then
-  echo "包含不安全的format方法:$test_pattern" >&2
-  echo "请修改后提交." >&2
-  echo '----' >&2
-  git grep -E "$test_pattern" '*.h' '*.m'  >&2
-  echo '----' >&2
-  result=1
-else 
-  echo "commit检查通过." >&1
-fi
+echo "${msg_color_warning}Begin commit check ...${msg_color_none} \n"
 
+script_path=$(git rev-parse --show-toplevel)/.githooks/pre-commit-rules
+
+sh $script_path/OBJC_ASSOCIATION_ASSIGN_checker.sh
+result=`echo $?`
+#result=`ruby image_name_checker.rb`
+
+echo "${msg_color_success}Finish commit check${msg_color_none} \n"
 
 exit $result
