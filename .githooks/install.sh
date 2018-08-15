@@ -2,28 +2,51 @@
 
 set -eu
 
-function install_hooks_into
+msg_color_error='\033[31m'
+msg_color_success='\033[32m'
+msg_color_warning='\033[33m'
+msg_color_none='\033[0m'
+
+function chmod_hooks_scripts
 {
-    DIR=$1
-    cd "${DIR}"
+    echo "${msg_color_warning}Begin chmod_hooks_scripts ...${msg_color_none} \n"
+    for file in $1
+    do
+        chmod +x "${file}"
+    done
+    echo "${msg_color_success}chmod_hooks_scripts success ${msg_color_none} \n"
+}
+
+function backup_hooks_scripts
+{
+    echo "${msg_color_warning}Begin backup_hooks_scripts ...${msg_color_none} \n"
+    CUR_DIR=$(pwd)
+    GIT_DIR=$(git rev-parse --show-toplevel)/.git
+    cd "${GIT_DIR}"
 
     set -e
     mv hooks hooks.old
     set +e
     mkdir hooks
-    cd hooks
-    for file in applypatch-msg commit-msg post-applypatch post-checkout post-commit post-merge post-receive pre-applypatch pre-auto-gc pre-commit prepare-commit-msg pre-rebase pre-receive update pre-push
-    do
-        echo "${2}" > "${file}"
-        chmod +x "${file}"
-    done
+    cd $CUR_DIR 
+    echo "${msg_color_success}backup_hooks_scripts success ${msg_color_none} \n"
 }
 
-function chmod_hooks_file
+function link_hooks_scripts
 {
-
+    echo "${msg_color_warning}Begin link_hooks_scripts ...${msg_color_none} \n"
+    HOOK_DIR=$(git rev-parse --show-toplevel)/.git/hooks
+    for file in $1
+    do
+        chmod +x "${file}"
+        ln -s "${file}" $HOOK_DIR/"${file}"
+    done
+    echo "${msg_color_success}link_hooks_scripts success ${msg_color_none} \n"
 }
 
-HOOK_DIR=$(git rev-parse --show-toplevel)/.git/hooks
+#applypatch-msg commit-msg post-applypatch post-checkout post-commit post-merge post-receive pre-applypatch pre-auto-gc pre-commit prepare-commit-msg pre-rebase pre-receive update pre-push
+hook_git_commond=pre-commit
 
-ln -s pre-commit.sh $HOOK_DIR/pre-commit
+chmod_hooks_scripts $hook_git_commond
+backup_hooks_scripts
+link_hooks_scripts $hook_git_commond
