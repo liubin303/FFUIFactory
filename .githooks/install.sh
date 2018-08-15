@@ -50,6 +50,11 @@ function link_hooks_scripts
     echo "${msg_color_success}link_hooks_scripts success ${msg_color_none} \n"
 }
 
+if ! gem list | grep bundler > /dev/null; then 
+    gem install bundler
+fi
+bundle install
+
 #applypatch-msg commit-msg post-applypatch post-checkout post-commit post-merge post-receive pre-applypatch pre-auto-gc pre-commit prepare-commit-msg pre-rebase pre-receive update pre-push
 hook_git_commond=pre-commit
 
