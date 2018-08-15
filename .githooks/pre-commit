@@ -20,12 +20,17 @@ echo "${msg_color_warning}Begin commit check ...${msg_color_none} \n"
 
 script_path=$(git rev-parse --show-toplevel)/.githooks/pre-commit-rules
 
-#check for shell
+#use shell
 sh $script_path/OBJC_ASSOCIATION_ASSIGN_checker.sh
 result=`echo $?`
+if $result != 0; then
+	exit $result
+fi
 
+#use ruby
 ruby $script_path/image_name_checker.rb
 result=`echo $?`
+
 
 echo "${msg_color_success}Finish commit check${msg_color_none} \n"
 
