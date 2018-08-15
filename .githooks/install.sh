@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eux
+set -eu
 
 msg_color_error='\033[31m'
 msg_color_success='\033[32m'
