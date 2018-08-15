@@ -7,34 +7,7 @@
 #
 # 
 
-set -eux
-
-function execute_shell_scripts
-{
-    sh $1
-	check_result
-}
-
-function execute_ruby_scripts
-{
-    ruby $1
-	check_result
-}
-
-function execute_python_scripts
-{
-    python $1
-	check_result
-}
-
-function check_result
-{
-	result=`echo $?`
-	if [ $result -eq 1 ]; then
-		exit $result
-	fi
-}
-
+set -eu
 
 result=0
 
@@ -43,17 +16,16 @@ msg_color_success='\033[32m'
 msg_color_warning='\033[33m'
 msg_color_none='\033[0m'
 
-echo "${msg_color_warning}Begin commit check ...${msg_color_none} \n"
 
 script_path=$(git rev-parse --show-toplevel)/.githooks/pre-commit-rules
 
 #use shell
-execute_shell_scripts $script_path/OBJC_ASSOCIATION_ASSIGN_checker.sh
+sh $script_path/OBJC_ASSOCIATION_ASSIGN_checker.sh
 
 #use ruby
-execute_ruby_scripts $script_path/image_name_checker.rb
+ruby $script_path/image_name_checker.rb
 
 
-echo "${msg_color_success}Finish commit check${msg_color_none} \n"
+echo "${msg_color_success}commit check success ${msg_color_none} \n"
 
 exit $result
